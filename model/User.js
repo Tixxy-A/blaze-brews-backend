@@ -14,6 +14,12 @@ const userSchema=new mongoose.Schema({
     password:{
         type:String,
         required:true,
+    },
+    resettoken:{
+        type:String
+    },
+    tokenExpiration:{
+        type:Date
     }
 });
 
